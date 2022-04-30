@@ -8,7 +8,7 @@ interface ResultComponentProps {
 
 const ResultComponent = ({ result }: ResultComponentProps) => {
   return (
-    <div className="break-all p-4 bg-white">
+    <div className="break-all h-72 p-4 bg-white">
       {result && <ReactJson src={JSON.parse(result)} />}
     </div>
   );

@@ -21,6 +21,37 @@ const Home: NextPage = () => {
       <Head>
         <title>JSON Formatter</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta charSet="UTF-8" />
+        <meta
+          name="keywords"
+          content="javascript json format formatter formatjson best"
+        />
+        <meta
+          name="description"
+          content="Format ugly Json with Best Tool out there, on of the best javascript's Object formatting tool"
+        ></meta>
+        <meta name="author" content="Devansh Saini" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+          name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+        />
+
+        <link rel="manifest" href="/manifest.json" />
+        <link
+          href="/favicon-16x16.png"
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+        />
+        <link
+          href="/favicon-32x32.png"
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+        />
+        <link rel="apple-touch-icon" href="/apple-icon.png"></link>
+        <meta name="theme-color" content="#317EFB" />
       </Head>
       <div className="flex align-middle justify-between w-full h-fit py-2 pr-3">
         <div className="pl-2 w-8">
@@ -30,15 +61,15 @@ const Home: NextPage = () => {
           <NavigationComponent />
         </div>
       </div>
-      <div className="flex w-full h-4/6 p-4 justify-center">
-        <div className="grow">
+      <div className="flex flex-col w-full p-4 justify-center sm:h-4/6 sm:flex-row">
+        <div className="sm:grow sm:my-10">
           <div className="flex text-2xl mb-2 justify-center ">
             <span>JSON</span>
           </div>
           <TextEditor userText={userText} setUserText={setUserText} />
         </div>
-        <div className="flex flex-col p-2">
-          <div className="flex flex-col h-full justify-center align-middle">
+        <div className="flex  p-2  ">
+          <div className="flex flex-row h-full justify-center align-middle">
             <OptionComponent
               userText={userText}
               result={result}
@@ -48,11 +79,11 @@ const Home: NextPage = () => {
             />
           </div>
         </div>
-        <div className=" p-2 w-1/2 ">
-          <div className="flex text-2xl mb-2 justify-center">
+        <div className=" p-2 w-full h-fit sm:w-1/2 sm:h-full  ">
+          <div className=" hidden text-2xl mb-2 justify-center sm:flex">
             <span> Formatted JSON</span>
           </div>
-          <div className="w-full h-full shadow-lg shadow-black-900 rounded-2xl  overflow-auto bg-white">
+          <div className="w-full h-72 shadow-lg shadow-black-900 rounded-2xl  overflow-auto bg-white sm:h-full">
             <ResultComponent result={result} />
           </div>
         </div>

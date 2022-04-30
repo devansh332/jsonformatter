@@ -47,7 +47,7 @@ const OptionComponent = ({
   };
 
   return (
-    <div className="flex flex-col text-white w-32">
+    <div className="flex flex-row text-white w-full justify-center sm:flex-col sm:w-32">
       <button
         className="shadow-lg shadow-black-600 text-black m-2 p-2 bg-white"
         onClick={onFormatHandler}
