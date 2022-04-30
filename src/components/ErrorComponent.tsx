@@ -1,4 +1,5 @@
 import React from "react";
+import Adsense from "./Adsense";
 
 interface ErrorComponentProps {
   errorMessage: string;
@@ -6,9 +7,14 @@ interface ErrorComponentProps {
 
 const ErrorComponent = ({ errorMessage }: ErrorComponentProps) => {
   return (
-    <div className="text-red-400">
-      {errorMessage && <pre>{errorMessage}</pre>}
-    </div>
+    <>
+      <Adsense />
+      {errorMessage && (
+        <div className="text-red-400 border-2 w-full flex justify-center h-20 align-middle items-center mx-12">
+          <pre>{errorMessage}</pre>
+        </div>
+      )}
+    </>
   );
 };
 

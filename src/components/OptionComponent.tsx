@@ -47,21 +47,21 @@ const OptionComponent = ({
   };
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col text-white w-32">
       <button
-        className="shadow-lg shadow-black-600 text-black m-2 p-2"
+        className="shadow-lg shadow-black-600 text-black m-2 p-2 bg-white"
         onClick={onFormatHandler}
       >
         <span>Format</span>
       </button>
       {result && !errorMessage && (
         <button
-          className="shadow-lg shadow-black-600 text-black m-2 p-2"
+          className="shadow-lg shadow-black-600 text-black m-2 p-2 bg-white"
           onClick={onCopyHandler}
         >
-          <div className="flex ">
-            <span>{isCopied ? "Copied" : "Copy"}</span>
-            {isCopied && <TickSvgComponent />}
+          <div className="flex justify-center">
+            <span className="mr-1">{isCopied ? "Copied" : "Copy"} </span>
+            {isCopied && <TickSvgComponent heigh="12" width="10" />}
           </div>
         </button>
       )}

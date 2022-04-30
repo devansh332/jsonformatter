@@ -18,7 +18,7 @@ const TextEditor = ({ userText, setUserText }: TextEditorProps) => {
     setUserText(e.target.value);
   };
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full text-black">
       <textarea
         className="p-4 shadow-lg shadow-black-600 rounded-xl h-full w-full resize-none"
         name="userText"

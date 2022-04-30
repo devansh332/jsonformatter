@@ -17,14 +17,14 @@ const Home: NextPage = () => {
   const [errorMessage, setErrorMessage] = useState("");
 
   return (
-    <div className="h-screen ">
+    <div className="h-screen bg-gray-600 text-white">
       <Head>
         <title>JSON Formatter</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex align-middle justify-between w-full h-fit py-2 pr-3">
-        <div className="pl-2">
-          <LogoSvgComponent />
+        <div className="pl-2 w-8">
+          <LogoSvgComponent className="h-12 w-12" />
         </div>
         <div>
           <NavigationComponent />
@@ -32,7 +32,7 @@ const Home: NextPage = () => {
       </div>
       <div className="flex w-full h-4/6 p-4 justify-center">
         <div className="grow">
-          <div className="flex text-xl justify-center">
+          <div className="flex text-2xl mb-2 justify-center ">
             <span>JSON</span>
           </div>
           <TextEditor userText={userText} setUserText={setUserText} />
@@ -48,11 +48,11 @@ const Home: NextPage = () => {
             />
           </div>
         </div>
-        <div className=" p-4 w-1/2 ">
-          <div className="flex text-lg justify-center">
+        <div className=" p-2 w-1/2 ">
+          <div className="flex text-2xl mb-2 justify-center">
             <span> Formatted JSON</span>
           </div>
-          <div className="w-full h-full shadow-lg shadow-black-900 rounded-2xl  overflow-auto">
+          <div className="w-full h-full shadow-lg shadow-black-900 rounded-2xl  overflow-auto bg-white">
             <ResultComponent result={result} />
           </div>
         </div>

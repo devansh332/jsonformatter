@@ -6,8 +6,7 @@ module.exports = {
   ],
   theme: {
     backgroundImage: {
-      "hero-pattern": "url(https://i.imgur.com/2cOaJ.png)",
-      
+      "lineNumber": "url(http://i.imgur.com/2cOaJ.png)",
     },
   },
   plugins: [],
