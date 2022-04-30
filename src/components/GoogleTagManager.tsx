@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 import { pageview } from "../../lib/gtm";
 
-const GoogleTagManager = ({ children }) => {
+const GoogleTagManager = ({ children }: any) => {
   const router = useRouter();
 
   useEffect(() => {

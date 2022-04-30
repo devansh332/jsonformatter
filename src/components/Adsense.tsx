@@ -4,10 +4,12 @@ export default function Adsense() {
   const loadAds = () => {
     try {
       if (typeof window !== "undefined") {
-        (window.adsbygoogle = window.adsbygoogle || []).push({});
+        ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push(
+          {}
+        );
       }
     } catch (error) {
-      console.log("adsense error", error.message);
+      console.log("adsense error", error);
     }
   };
 
