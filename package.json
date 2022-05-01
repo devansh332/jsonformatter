@@ -6,11 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "next": "12.1.5",
     "next-pwa": "^5.5.2",
+    "next-sitemap": "^2.5.20",
     "prismjs": "^1.28.0",
     "react": "18.0.0",
     "react-dom": "18.0.0",

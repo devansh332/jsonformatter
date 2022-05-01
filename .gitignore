@@ -8,8 +8,12 @@
 public/sw.js
 public/workbox-*.js
 public/browserconfig.xml
+public/robots.txt
+public/sitemap*
 # testing
 /coverage
+
+yarn.lock
 
 # next.js
 /.next/
